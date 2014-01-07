@@ -1,6 +1,6 @@
 require 'formula'
 
-class Thrift < Formula
+class ThriftBackport < Formula
   homepage 'http://thrift.apache.org'
   # The thrift.apache.org 0.9.1 archive is missing PHP ext, fixed in THRIFT-2129
   # By grapping the source from git instead, it's fixed, but we need to bootstrap
@@ -100,7 +100,7 @@ class Thrift < Formula
 
     To install PHP bindings:
       Install brew'ed php
-      brew install thrift --with-php
+      brew install thrift-backport --with-php
 
     EOS
   end

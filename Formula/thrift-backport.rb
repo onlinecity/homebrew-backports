@@ -13,11 +13,6 @@ class ThriftBackport < Formula
     depends_on 'pkg-config' => :build
   end
 
-  # We need to install from sources, because website tarball is missing php-ext
-  depends_on :autoconf
-  depends_on :automake
-  depends_on :libtool
-
   option "with-haskell", "Install Haskell binding"
   option "with-erlang", "Install Erlang binding"
   option "with-java", "Install Java binding"
